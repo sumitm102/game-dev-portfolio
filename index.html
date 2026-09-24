@@ -1,14 +1,454 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><meta name='description' content='Sumit Mandal — Unity developer and computer science student portfolio.'><title>Sumit Mandal | Unity Developer</title><link rel='stylesheet' href='styles.css'></head><body>
-<nav><a class='brand' href='#top'>SM<span>.</span></a><div class='navlinks'><a href='#games'>Games</a><a href='#research'>Research</a><a href='#about'>About</a><a href='#contact'>Contact</a></div></nav>
-<main id='top'>
-<section class='hero'><div><p class='eyebrow'>UNITY DEVELOPER • COMPUTER SCIENCE</p><h1>I build interactive systems, games, and research software.</h1><p class='lede'>I'm Sumit Mandal, a Computer Science student at Queens College with experience developing in Unity/C#, research software at the Air Force Research Laboratory, and embedded interactive systems.</p><div class='actions'><a class='btn primary' href='#games'>Explore my work</a><a class='btn' href='#contact'>Contact me</a></div></div><div class='hero-card'><div class='orb'></div><p>Currently exploring</p><strong>3D interaction • gameplay systems • visualization</strong><small>Unity / C#</small></div></section>
-<section id='games'><div class='section-head'><p class='eyebrow'>SELECTED WORK</p><h2>Games & interactive projects</h2><p>Projects focused on gameplay programming, player interaction, AI, and building responsive experiences in Unity.</p></div>
-<div class='grid'>
-<article class='project featured'><div class='visual stealth'><span>3D STEALTH</span><div class='reticle'>+</div></div><div class='content'><div class='tags'><span>Unity</span><span>C#</span><span>3D</span><span>AI</span></div><h3>3D Stealth Game</h3><p>A Unity stealth project focused on player movement and enemy behavior. Built as a hands-on exploration of 3D gameplay systems and AI-driven interactions.</p><h4>What I worked on</h4><ul><li>3D character controller and player movement</li><li>Navigation-based enemy AI</li><li>Enemy detection and player-awareness systems</li></ul><p class='note'>Add gameplay screenshots, a short clip, GitHub, and/or a playable build here.</p></div></article>
-<article class='project'><div class='visual rpg'><span>2D RPG</span><div class='pixel'>◆</div></div><div class='content'><div class='tags'><span>Unity</span><span>C#</span><span>2D</span></div><h3>2D RPG</h3><p>An in-progress Unity RPG project used to deepen my understanding of 2D game architecture, scene interaction, UI, and player-facing systems.</p><h4>Portfolio-ready details to add</h4><ul><li>Core gameplay loop and player mechanics</li><li>UI, dialogue, inventory, combat, or progression systems you built</li><li>A short gameplay video showing the project in motion</li></ul></div></article>
-<article class='project'><div class='visual jam'><span>GAME JAM</span><div class='clock'>15:00</div></div><div class='content'><div class='tags'><span>Unity</span><span>Rapid Prototyping</span><span>Team</span></div><h3>Unity Game Jam Work</h3><p>Rapid game-development work centered on turning a constrained idea into a playable experience while collaborating on mechanics, scope, and presentation.</p><h4>Before publishing</h4><ul><li>Use the final game title and exact contribution</li><li>Add the jam theme, team size, and development timeframe</li><li>Embed a GIF or 20–30 second gameplay clip</li></ul></div></article>
-</div></section>
-<section id='research' class='research'><div class='section-head'><p class='eyebrow'>PROFESSIONAL UNITY EXPERIENCE</p><h2>Research software at AFRL</h2></div><div class='research-card'><div><p class='kicker'>AIR FORCE RESEARCH LABORATORY</p><h3>Phantom Arrow — Unity Research Wargame</h3><p>As a Wargaming Software Engineer Intern, I contributed to a Unity-based research application by redesigning how application state was stored and retrieved.</p><div class='metrics'><div><strong>~10×</strong><span>faster queries</span></div><div><strong>50%+</strong><span>lower memory use</span></div><div><strong>50+</strong><span>players/sessions supported</span></div></div></div><div><h4>My contribution</h4><ul><li>Migrated JSON state storage to a relational SQLite architecture in C#.</li><li>Implemented database setup, creation, insertion, and retrieval functionality.</li><li>Integrated database reads into the existing Unity application and validated SQL behavior.</li><li>Participated in Git-based code reviews and debugging of the research software.</li></ul><p class='note'>Some project material may not be publicly shareable; this section focuses on your technical contribution rather than internal visuals.</p></div></div></section>
-<section id='about' class='about'><div><p class='eyebrow'>ABOUT</p><h2>Software engineering with an interest in interactive technology.</h2></div><div><p>I'm pursuing a B.S. in Computer Science at CUNY Queens College, with an expected graduation in December 2027. I enjoy building software where users can directly interact with the systems I create—from games and research applications to embedded touchscreen interfaces.</p><p>My current interests include Unity development, computer graphics, VR/AR, gameplay programming, and applying interactive technology to engineering and scientific visualization.</p><div class='skillrow'><span>C#</span><span>Unity</span><span>C++</span><span>Java</span><span>Python</span><span>TypeScript</span><span>SQL</span><span>Git</span></div></div></section>
-<section id='contact' class='contact'><p class='eyebrow'>LET'S CONNECT</p><h2>Interested in my work?</h2><p>Add your professional email, GitHub, LinkedIn, and itch.io (if you create one) below before publishing.</p><div class='actions'><a class='btn primary' href='mailto:YOUR_EMAIL'>Email me</a><a class='btn' href='YOUR_GITHUB' target='_blank' rel='noreferrer'>GitHub</a><a class='btn' href='YOUR_LINKEDIN' target='_blank' rel='noreferrer'>LinkedIn</a></div></section>
-</main><footer><span>© 2026 Sumit Mandal</span><span>Built for the web • Unity-focused portfolio</span></footer></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Sumit Mandal — Unity developer and computer science student game dev portfolio."
+    />
+    <title>Sumit Mandal Game Dev Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a class="brand" href="#top"><span>Sumit </span>Mandal</a>
+      <div class="navlinks">
+        <a href="#games">Games</a><a href="#experience">Experience</a
+        ><a href="#about">About</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <main id="top">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">UNITY DEVELOPER • COMPUTER SCIENCE</p>
+          <h1>
+            I develop games and interactive systems with experience contributing
+            to a research wargame.
+          </h1>
+          <p class="lede">
+            I'm Sumit Mandal, a Computer Science student at Queens College with
+            experience developing games in Unity/C#, research wargame at the Air
+            Force Research Laboratory, and embedded interactive systems.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#games">Explore my work</a
+            ><a class="btn" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="orb"></div>
+          <p>Currently exploring</p>
+          <strong>3D interaction • gameplay systems • visualization</strong
+          ><small>Unity / C#</small>
+        </div>
+      </section>
+      <section id="games">
+        <div class="section-head">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Games & interactive projects</h2>
+          <p>
+            Projects focused on gameplay programming, player interaction, AI,
+            and building responsive experiences in Unity.
+          </p>
+        </div>
+
+        <div class="grid">
+          <!-- 1. FEATURED: 3D COMBAT AND TRAVERSAL -->
+          <article class="project featured">
+            <div class="project-media">
+              <img
+                src="https://i.imgur.com/qGBFikZ.gif"
+                alt="3D Combat and Traversal gameplay"
+                loading="lazy"
+              />
+              <span class="media-label">FEATURED PROJECT</span>
+            </div>
+
+            <div class="content">
+              <div class="tags">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>3D</span>
+                <span>Combat</span>
+                <span>Traversal</span>
+              </div>
+
+              <h3>3D Combat & Traversal</h3>
+              <p>
+                A 3D gameplay project exploring character movement, traversal,
+                and combat interactions.
+              </p>
+
+              <div class="project-details">
+                <h4>Project Highlights</h4>
+                <ul>
+                  <li>Character movement and traversal mechanics</li>
+                  <li>Combat and player interaction systems</li>
+                  <li>Responsive character controls</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. 3D STEALTH GAME -->
+          <article class="project">
+            <div class="project-media">
+              <img
+                src="https://i.imgur.com/1DkTzLy.gif"
+                alt="3D Stealth Game gameplay"
+                loading="lazy"
+              />
+              <span class="media-label">3D STEALTH</span>
+            </div>
+
+            <div class="content">
+              <div class="tags">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>3D</span>
+                <span>Enemy AI</span>
+              </div>
+
+              <h3>3D Stealth Game</h3>
+              <p>
+                A 3D stealth game focused on player movement, enemy navigation,
+                and detection systems.
+              </p>
+
+              <div class="project-details">
+                <h4>Project Highlights</h4>
+                <ul>
+                  <li>3D character controller and player movement</li>
+                  <li>Navigation-based enemy AI</li>
+                  <li>Enemy detection and player-awareness systems</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. PROCEDURAL ANIMATION -->
+          <article class="project">
+            <div class="project-media">
+              <img
+                src="https://i.imgur.com/Jod5jKm.gif"
+                alt="Procedural Animation demonstration"
+                loading="lazy"
+              />
+              <span class="media-label">PROCEDURAL ANIMATION</span>
+            </div>
+
+            <div class="content">
+              <div class="tags">
+                <span>Unity</span>
+                <span>3D</span>
+                <span>Animation</span>
+              </div>
+
+              <h3>Procedural Animation</h3>
+              <p>
+                A technical project exploring procedural animation and
+                dynamically generated character movement in Unity.
+              </p>
+
+              <div class="project-details">
+                <h4>Project Highlights</h4>
+                <ul>
+                  <li>Procedural character animation</li>
+                  <li>Runtime movement and animation techniques</li>
+                  <li>Interactive animation systems</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. 3D SHOOTER GAME -->
+          <article class="project">
+            <div class="project-media">
+              <img
+                src="https://i.imgur.com/CyZo7dT.gif"
+                alt="3D Shooter gameplay"
+                loading="lazy"
+              />
+              <span class="media-label">3D SHOOTER</span>
+            </div>
+
+            <div class="content">
+              <div class="tags">
+                <span>Unity</span>
+                <span>3D</span>
+                <span>Shooter</span>
+              </div>
+
+              <h3>3D Shooter Game</h3>
+              <p>
+                A 3D shooter project exploring combat mechanics, player
+                controls, and responsive gameplay.
+              </p>
+
+              <div class="project-details">
+                <h4>Project Highlights</h4>
+                <ul>
+                  <li>3D shooting and combat mechanics</li>
+                  <li>Player movement and aiming</li>
+                  <li>Interactive gameplay systems</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. 2D ACTION RPG -->
+          <article class="project">
+            <div class="project-media">
+              <img
+                src="https://i.imgur.com/zvju7dS.gif"
+                alt="2D Action RPG gameplay"
+                loading="lazy"
+              />
+              <span class="media-label">2D RPG</span>
+            </div>
+
+            <div class="content">
+              <div class="tags">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>2D</span>
+                <span>RPG</span>
+              </div>
+
+              <h3>2D Action RPG</h3>
+              <p>
+                A 2D action RPG exploring player movement, combat, and
+                interactive game systems.
+              </p>
+
+              <div class="project-details">
+                <h4>Project Highlights</h4>
+                <ul>
+                  <li>2D player movement and character controls</li>
+                  <li>Action RPG gameplay mechanics</li>
+                  <li>Game UI and scene interactions</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. PIZZA RUSH -->
+          <article class="project">
+            <div class="project-media">
+              <img
+                src="https://i.imgur.com/q8thLiZ.gif"
+                alt="Pizza Rush gameplay"
+                loading="lazy"
+              />
+              <span class="media-label">PLATFORMER</span>
+            </div>
+
+            <div class="content">
+              <div class="tags">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>2D</span>
+                <span>Platformer</span>
+              </div>
+
+              <h3>Pizza Rush</h3>
+              <p>
+                A fast-paced 2D platformer centered on delivering pizzas while
+                overcoming obstacles along the way.
+              </p>
+
+              <div class="project-details">
+                <h4>Project Highlights</h4>
+                <ul>
+                  <li>2D platforming and player movement</li>
+                  <li>Obstacle-based gameplay</li>
+                  <li>Time-sensitive pizza delivery challenges</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. POINT AND CLICK GAME -->
+          <article class="project">
+            <div class="project-media">
+              <img
+                src="https://i.imgur.com/32l5tEh.gif"
+                alt="Point and Click Game gameplay"
+                loading="lazy"
+              />
+              <span class="media-label">POINT & CLICK</span>
+            </div>
+
+            <div class="content">
+              <div class="tags">
+                <span>Game Development</span>
+                <span>Point & Click</span>
+                <span>Interaction</span>
+              </div>
+
+              <h3>Point and Click Game</h3>
+              <p>
+                An interactive point-and-click game focused on exploration and
+                mouse-driven interactions.
+              </p>
+
+              <div class="project-details">
+                <h4>Project Highlights</h4>
+                <ul>
+                  <li>Mouse-driven gameplay and interactions</li>
+                  <li>Interactive environments</li>
+                  <li>Exploration and player interaction</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. ROAD RUNNER -->
+
+          <!-- 8. ROAD RUNNER -->
+          <article class="project">
+            <div class="project-media">
+              <img
+                src="https://i.imgur.com/NqhqHc7.gif"
+                alt="Road Runner gameplay"
+                loading="lazy"
+              />
+              <span class="media-label">2D ENDLESS RUNNER</span>
+            </div>
+
+            <div class="content">
+              <div class="tags">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>2D</span>
+                <span>Procedural Generation</span>
+              </div>
+
+              <h3>Road Runner</h3>
+              <p>
+                A 2D endless runner inspired by Subway Surfers, featuring
+                procedurally generated environments and continuous
+                obstacle-based gameplay.
+              </p>
+
+              <div class="project-details">
+                <h4>Project Highlights</h4>
+                <ul>
+                  <li>Procedural generation for endless level creation</li>
+                  <li>Continuous running and obstacle avoidance mechanics</li>
+                  <li>Dynamic environment generation during gameplay</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="experience" class="research">
+        <div class="section-head">
+          <p class="eyebrow">PROFESSIONAL UNITY EXPERIENCE</p>
+          <h2>Wargaming Software Engineer Intern at AFRL</h2>
+        </div>
+        <div class="research-card">
+          <div>
+            <p class="kicker">AIR FORCE RESEARCH LABORATORY</p>
+            <h3>Phantom Arrow - Unity Research Wargame</h3>
+            <p>
+              As a Wargaming Software Engineer Intern, I contributed to a
+              Unity-based research application by redesigning how application
+              state was stored and retrieved.
+            </p>
+            <div class="metrics">
+              <div><strong>~10×</strong><span>faster queries</span></div>
+              <div><strong>50%+</strong><span>lower memory use</span></div>
+              <div>
+                <strong>50+</strong><span>players/sessions supported</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>My contribution</h4>
+            <ul>
+              <li>
+                Migrated JSON state storage to a relational SQLite architecture
+                in C#.
+              </li>
+              <li>
+                Implemented database setup, creation, insertion, and retrieval
+                functionality.
+              </li>
+              <li>
+                Integrated database reads into the existing Unity application
+                and validated SQL behavior.
+              </li>
+              <li>
+                Participated in Git-based code reviews and debugging of the
+                research software.
+              </li>
+            </ul>
+            <p class="note">
+              The focus of this project was on improving the technical
+              performance and maintainability of the research software.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div>
+          <p class="eyebrow">ABOUT</p>
+          <h2>Software engineering with an interest in game development.</h2>
+        </div>
+        <div>
+          <p>
+            I'm pursuing a B.S. in Computer Science at CUNY Queens College, with
+            an expected graduation in December 2027. I enjoy building software
+            where users can directly interact with the systems I create. From
+            games and research applications to embedded touchscreen interfaces.
+          </p>
+          <p>
+            My current interests include Software Engineering, Unity
+            development, computer graphics, VR/AR, gameplay programming,
+            embedded systems, and applying interactive technology to engineering
+            and scientific visualization.
+          </p>
+          <div class="skillrow">
+            <span>C#</span><span>Unity</span><span>C++</span><span>Java</span
+            ><span>Python</span><span>TypeScript</span><span>SQL</span
+            ><span>Git</span>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Interested in my work?</h2>
+        <p>
+          Feel free to reach out via email, check out my projects on GitHub, or
+          connect with me on LinkedIn.
+        </p>
+        <div class="actions">
+          <a
+            class="btn primary"
+            href="mailto:SUMIT.MANDAL60@stu-mail.qc.cuny.edu"
+            >Email me</a
+          ><a
+            class="btn"
+            href="https://github.com/sumitm102"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          ><a
+            class="btn"
+            href="https://www.linkedin.com/in/sumit-mandal-cs-qc"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>© 2026 Sumit Mandal</span
+      ><span>Built for the web • Unity-focused portfolio</span>
+    </footer>
+  </body>
+</html>
